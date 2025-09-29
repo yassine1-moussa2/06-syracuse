@@ -32,13 +32,15 @@ def syracuse_l(n):
         list: la suite de Syracuse de source n"""
     l = [ ]
     uk=n
-    while n>1:
+    while uk>1:
         if uk%2==0:
             uk=uk//2
+            print(uk)
             l.append(uk)
+            print(l)
         else:
             uk=uk*3+1
-        l.append(uk)
+            l.append(uk)
     return l
 
 def temps_de_vol(l):
@@ -91,6 +93,7 @@ def main():
     print(temps_de_vol(lsyr))
     print(temps_de_vol_en_altitude(lsyr))
     print(altitude_maximale(lsyr))
+    print("chaîne test")
 if __name__ == "__main__":
     main()
     #End-of-file (EOF)
